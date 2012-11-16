@@ -7,10 +7,10 @@ This is my NCCL repo!
 *go to web  
 分隔
 
-#inclue <stdio.h>
-
-int main()
-{
-
-  return 0;
-}
+  #inclue <stdio.h>
+  
+  int main()
+  {
+  
+    return 0;
+  }
