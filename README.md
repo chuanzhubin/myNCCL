@@ -7,11 +7,11 @@ This is my NCCL repo!
 *go to web  
 分隔
 
-  #inclue <stdio.h>
+    #inclue <stdio.h>
+    
+    int main()
+    {
+      printf("something\n");
   
-  int main()
-  {
-    printf("something\n");
-
-    return 0;
-  }
+      return 0;
+    }
