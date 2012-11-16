@@ -11,6 +11,7 @@ This is my NCCL repo!
   
   int main()
   {
-  
+    printf("something\n");
+
     return 0;
   }
