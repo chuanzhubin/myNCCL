@@ -1,3 +1,22 @@
+/*1, 连续3个int 全局变量地址间隔4个字节, 3个int型变量也间隔4个字节. 全局和局部不在一起
+  2, 指针+1, 相当于数组下移一个单位,长度和指针类型有关.
+  3, 把 global 定义为 char, short, float, long long 类型, 发现全局变量的两个变量间,最少间隔4个字节*/
+
+/*
+打印结果:
+length of int:[4] char:[1] float:[4] long long:[8]
+
+3 int global var [20000618] [2000061c] [20000620]
+3 local var [2ff22300] [2ff22304] [2ff22308]
+
+3 char global var [20000624] [20000628] [2000062c]
+3 float global var [20000630] [20000634] [20000638]
+3 long long global var [20000640] [20000648] [20000650]
+
+3 local var [2ff22304] [2ff22302] [2ff22304]
+*/
+
+
 #include <stdio.h>
 
 int iGlobal1 = 0;
